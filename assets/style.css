@@ -1,0 +1,30 @@
+.header-img {
+    width: 100vw;
+    height: 100vh;
+    margin-bottom: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#home-header{
+    background-image: url("images/notepad.jpg");
+}
+
+#profile-header{
+    background-image: url("images/notebook.jpg");
+}
+
+#contact-header{
+    background-image: url("images/contactus.jpg");
+}
+.content {
+margin-bottom: 50px;
+}
+
+form {
+    margin: auto;
+}
+
+.container{
+    margin-top: 50px;
+}
