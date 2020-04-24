@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <!-- Include JQuery for Semantic UI -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Include Semantic UI CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css"
+    />
+    <!-- Include Semantic UI JS -->
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <!-- User JS & CSS -->
+    <link rel="stylesheet" href="assets/style.css" />
+    <script>
+        function redirect(){
+            window.alert("Form submitted. You will be redirected to the Home Page...");
+            document.location.href="home.html"
+        }
+    </script>
+  </head>
+  <body>
+    <div class="ui top fixed menu">
+      <a class="item" href="home.html">Home</a>
+      <a class="item" href="profile.html">Profile</a>
+      <a class="item active" href="#">Contact</a>
+    </div>
+    <div id="contact-header" class="header-img"></div>
+    <div class="ui one column stackable center aligned page grid container">
+      <form class="ui form container">
+        <h4 class="ui dividing header">For inquiries, please submit the form.</h4>
+        <div class="fields">
+          <div class="field">
+            <label>First name</label>
+            <input type="text" placeholder="First Name" />
+          </div>
+          <div class="field">
+            <label>Last name</label>
+            <input type="text" placeholder="Last Name" />
+          </div>
+        </div>
+        <div class="field">
+          <label>Message</label>
+          <textarea></textarea>
+        </div>
+        <div class="ui submit button" onclick="redirect()">Submit</div>
+      </form>
+    </div>
+  </body>
+</html>
